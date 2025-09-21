@@ -1,0 +1,37 @@
+body {
+  display: flex;  /* Activamos Flexbox */
+  height: 100vh;
+  justify-content: center;  /* Centra horizontalmente */
+  align-items: center;   /* Centra verticalmente */
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+label {
+  position: absolute;
+  left: 15px;
+  padding: 0 6px;
+  background: #fff;
+  font-size: 12px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+input {
+  width: 200px;
+  height: 32px;
+  border-radius: 5px;
+}
+
+input:focus+label {
+  transform: translateY(-20px);
+  color: #0051ff;
+}
+
+input:focus {
+  border-color: #0051ff;
+}
